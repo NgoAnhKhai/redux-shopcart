@@ -97,11 +97,11 @@ const ProductOne = (props) => {
   const dispatch = useDispatch(); // Sử dụng dispatch để thêm/xóa sản phẩm khỏi giỏ hàng
 
   const handleAddProduct = () => {
-    dispatch(cartActions.addProduct(product)); // Thêm sản phẩm vào giỏ hàng
+    dispatch(cartActions.addToCart(product)); // Thêm sản phẩm vào giỏ hàng
   };
 
   const handleRemoveProduct = () => {
-    dispatch(cartActions.removeProduct(product)); // Xóa sản phẩm khỏi giỏ hàng
+    dispatch(cartActions.removeCart(product)); // Xóa sản phẩm khỏi giỏ hàng
   };
 
   return (
@@ -152,11 +152,11 @@ const ProductTwo = (props) => {
   const dispatch = useDispatch();
 
   const handleAddProduct = () => {
-    dispatch(cartActions.addProduct(product));
+    dispatch(cartActions.addToCart(product));
   };
 
   const handleRemoveProduct = () => {
-    dispatch(cartActions.removeProduct(product));
+    dispatch(cartActions.removeCart(product));
   };
 
   return (
